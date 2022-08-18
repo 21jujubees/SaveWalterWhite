@@ -1,6 +1,6 @@
 const visitorCounterElement = document.getElementById("visitorCounter");
 
-let visitCounter = Math.floor((Math.random() * 1000000) + 1);
+let visitCounter = Math.floor((Math.random() * 1000000) + 10000);
 
 console.log(visitCounter);
 var startCount = setInterval(function(){
