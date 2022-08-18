@@ -1,13 +1,11 @@
 const visitorCounterElement = document.getElementById("visitorCounter");
 
-let visitCounter = 0;
-let storageCounter = localStorage.getItem("visitCounter");
+let visitCounter = Math.floor((Math.random() * 1000000) + 1);
 
 console.log(visitCounter);
 var startCount = setInterval(function(){
 
 	visitCounter += Math.floor((Math.random() * 10) + 1);
-	localStorage.setItem("visitCounter", visitCounter);
 	visitorCounterElement.innerHTML = `${visitCounter}`;
 
 }, 500);
